@@ -1,4 +1,4 @@
-const courses = [
+window.courses = [
     {
         sphere: 'Marketing',
         name: 'The Ultimate Google Ads Training Course',
@@ -8,17 +8,17 @@ const courses = [
     },
     {
         sphere: 'Management',
-        name: 'Prduct Management Fundamentals',
+        name: 'Product Management Fundamentals',
         price: '$480',
         author: 'by Marvin McKinney',
         img: './img/second.jpg'
     },
     {
-        sphere: 'HR & Recruting',
-        name: 'HR  Management and Analytics',
+        sphere: 'HR & Recruiting',
+        name: 'HR Management and Analytics',
         price: '$200',
         author: 'by Leslie Alexander Li',
-        img: './img/third'
+        img: './img/third.jpg'
     },
     {
         sphere: 'Marketing',
@@ -49,17 +49,17 @@ const courses = [
         img: './img/seven.jpg'
     },
     {
-        sphere: 'HR & Recruting',
+        sphere: 'HR & Recruiting',
         name: 'Human Resources – Selection and Recruitment',
         price: '$150',
         author: 'by Kathryn Murphy',
-        img: './img/pre-last'
+        img: './img/pre-last.jpg'
     },
     {
         sphere: 'Design',
-        name: 'User Experience. Human-centered Design',
+        name: 'User Experience. Human-Centered Design',
         price: '$240',
         author: 'by Cody Fisher',
-        img: './img/last'
+        img: './img/last.jpg'
     }
-]
+];

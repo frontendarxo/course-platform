@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Courses</title>
+    <title>Онлайн‑курсы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
 </head>
-<body>
-    <header>
-        <span>Enjoy your studing</span>
-        <h1>Our online courses</h1>
+<body class="page">
+<div class="page__wrapper">
+    <header class="hero">
+        <div class="hero__container container">
+            <p class="hero__eyebrow">Enjoy your studying</p>
+            <h1 class="hero__title">Our online courses</h1>
+        </div>
     </header>
-    <main>
-        <section class="filter">
-            <ul class="filter__list">
-                <li class="filter__item">All</li>
-                <li class="filter__item">Marketing</li>
-                <li class="filter__item">Management</li>
-                <li class="filter__item">HR & Recruting</li>
-                <li class="filter__item">Design</li>
-                <li class="filter__item">Development</li>
-            </ul>
-            <div class="filter__field">
-                <input type="text" placeholder="Search course...">
-            </div>
-        </section>
-        <section class="courses">
-            <ul class="courses__list">
-                <li class="courses__item">
-                    <img src="" alt="">
-                    <span class="course-sphere"></span>
-                    <p class="course-name"></p>
-                    <p><b id="course-price"></b></p>
-                </li>
-            </ul>
-        </section>
+
+    <main class="catalog">
+        <div class="catalog__container container">
+            <section class="catalog-filter" aria-label="Фильтры курсов">
+                <div class="catalog-filter__tags" data-filter-list></div>
+                <label class="catalog-filter__search" aria-label="Поиск курса">
+                    <span class="catalog-filter__icon" aria-hidden="true"></span>
+                    <input class="catalog-filter__input" type="search" placeholder="Поиск курса..." data-search-input autocomplete="off">
+                </label>
+            </section>
+
+            <section class="catalog__groups" data-groups aria-live="polite"></section>
+            <p class="catalog__empty" data-empty hidden>Ничего не найдено. Попробуйте изменить запрос или категорию.</p>
+        </div>
     </main>
+</div>
+
+<script src="./course-data.js"></script>
+
 </body>
 </html>
